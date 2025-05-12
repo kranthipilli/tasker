@@ -12,7 +12,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Tanker",
+  title: "Tasker",
   description: "Developed by Kranthi Pilli",
 };
 
