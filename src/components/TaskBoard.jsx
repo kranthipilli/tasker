@@ -13,10 +13,8 @@ const TaskBoard = () => {
     console.log("useEffect");
 
     const savedColumns = localStorage.getItem("taskColumns");
-    console.log(savedColumns);
     const savedTasks = localStorage.getItem("tasks");
-    console.log(savedTasks);
-    if (!savedColumns.length && !savedTasks.length) {
+    if (savedColumns?.length > 0 && savedTasks?.length > 0) {
       console.log("if");
       setColumns(JSON.parse(savedColumns));
       setTasks(JSON.parse(savedTasks));
